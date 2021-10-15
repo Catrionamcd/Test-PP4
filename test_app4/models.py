@@ -7,6 +7,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Channel(models.Model):
     topic = models.CharField(max_length=50, unique=True)
+    topic_url = models.SlugField(max_length=50, unique = True, null=True)
     description = models.CharField(max_length=200)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="channel_posts")
     created_on = models.DateTimeField(auto_now_add=True)

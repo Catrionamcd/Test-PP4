@@ -12,7 +12,9 @@
                 <div class="col-md-4">
                     <div class="card mb-4">
                         <div class="card-body">
-                            <h2 class="card-title">{{ channel.topic }}</h2>
+                            <h2 class="card-title">{{ channel.topic }} 
+                                <p class="author">Author: {{ channel.author }}</p>
+                            </h2>
                             <p class="card-text">{{ channel.description }}</p>
                             <hr />
                             <p class="card-text text-muted h6">{{ channel.created_on}} 
