@@ -39,6 +39,8 @@ DEBUG = False
 # else:
 #     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 ALLOWED_HOSTS = ['test-pp4.herokuapp.com', 'localhost']
 
 
